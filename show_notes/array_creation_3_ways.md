@@ -1,9 +1,3 @@
----
-title: 'NumPy Array Creation: 3 Ways in 4 Minutes'
-created: '2019-07-22T21:12:48.863Z'
-modified: '2019-07-22T23:27:44.792Z'
----
-
 # NumPy Array Creation: 3 Ways in 4 Minutes
 
 Numpy is a *ridiculously* useful Python library which allows for complex data processing at extremely high speeds (speeds which are probably faster than you would be able to acheive if you wrote your loops yourself in a compiled language like C). It actually has an extremely elegant interface but it can be a bit scary since it probably won't look like code that you're used to. So let's start at the top and go over three ways to create a Numpy array in four minutes.
