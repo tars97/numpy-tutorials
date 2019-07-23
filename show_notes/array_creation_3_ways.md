@@ -39,14 +39,14 @@ Note that if you want an array of booleans, `zeros` will make an array of `false
 The last type of empty array is for when you plan to overwrite every single value in an array, and thus don't care whether its values are initialized with ones, zeros, or any numbers at all. For that, just call `empty`. Again, same syntax as `zeros` and `ones`. Numpy is just going to ask your operating system for a section of memory and hand it back to you as an array. It will just contain whatever junk values happened to be in that particular section of memory at the time. This will be different run-over-run. So be cautious when using this method--make sure your program writes a value to every element before use, otherwise you'll end up with some very unexpected results. It may however be slightly faster than if numpy asks your operating system for a chunk of memory full of zeros, although this is mostly going to be insignificant.
 
 ```python
-ones_array = np.ones(50, dtype=np.bool)
-ones_md_array = np.ones((10, 10), dtype=np.float32)
+empty_array = np.empty(50, dtype=np.bool)
+empty_md_array = np.empty((10, 10), dtype=np.float32)
 
 print('EMPTY:')
 print('Single-dimensional:')
-print(ones_array)
+print(empty_array)
 print('Multi-dimensional:')
-print(ones_md_array)
+print(empty_md_array)
 ```
 
 ## \#2: Synthetic Arrays
