@@ -51,14 +51,14 @@ print(empty_md_array)
 
 ## \#2: Synthetic Arrays
 
-When I say "synthetic arrays" I just mean arrays which contain some sort of generated sequence which you can use as a starting point for your computations. The most common is probably just an array which counts 0, 1, 2... up until the end of the array. These are often used as the axis for a graph or as an index array. To make such an array in Numpy, use the `arrange` function.
+When I say "synthetic arrays" I just mean arrays which contain some sort of generated sequence which you can use as a starting point for your computations. The most common is probably just an array which counts 0, 1, 2... up until the end of the array. These are often used as the axis for a graph or as an index array. To make such an array in Numpy, use the `arange` function.
 
 ```python
-zero_to_ten = np.arrange(10)
-twenty_to_thirty = np.arrange(20, 30)
-ten_by_twos = np.arrange(0, 10, 2)
+zero_to_ten = np.arange(10)
+twenty_to_thirty = np.arange(20, 30)
+ten_by_twos = np.arange(0, 10, 2)
 
-print('ARRANGE:')
+print('ARANGE:')
 print('One parameter:')
 print(zero_to_ten)
 print('Two parameters:')
